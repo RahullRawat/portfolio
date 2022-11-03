@@ -11,50 +11,51 @@ const data = [
 		id: 1,
 		title: "Aipan Store",
 		backgroundImg: aipan,
-		projectUrl: "",
+		liveUrl: "https://aipan.netlify.app/",
+		githubLink: "https://github.com/RahullRawat/aipan-store-react",
 	},
 	{
 		id: 2,
 		title: "Cricket Classics",
 		backgroundImg: cricket,
-		projectUrl: "",
+		liveUrl: "https://aipan.netlify.app/",
+		githubLink: "https://github.com/RahullRawat/cricket-classics",
 	},
 	{
 		id: 3,
 		title: "Quiz Adda",
 		backgroundImg: quizadda,
-		projectUrl: "",
+		liveUrl: "https://quiz-adda.netlify.app/",
+		githubLink: "https://github.com/RahullRawat/quiz-adda",
 	},
 	{
 		id: 4,
 		title: "TopNote",
 		backgroundImg: topnote,
-		projectUrl: "",
+		liveUrl: "https://topnote.netlify.app/",
+		githubLink: "https://github.com/RahullRawat/topNote",
 	},
 ];
 
 const Projects = () => {
 	return (
-		<div className="w-full">
+		<div id="projects" className="w-full">
 			<div className="max-w-[1240px] mx-auto px-2 py-16">
 				<p className="text-xl tracking-widest uppercase text-[#5651e5]">
 					Projects
 				</p>
-				<h2 className="py-4">What I've Built</h2>
+				<h2 className="py-4">What I’ve Built</h2>
 				<div className="grid md:grid-cols-2 gap-8">
 					{data.map((item) => (
 						<div key={item.id}>
 							<ProjectItem
 								title={item.title}
 								backgroundImg={item.backgroundImg}
-								projectUrl={item.projectUrl}
+								liveUrl={item.liveUrl}
+								githubLink={item.githubLink}
 							/>
 						</div>
 					))}
-					{/* <ProjectItem title='' backgroundImg={ } projectUrl = '/'/>
-                    <ProjectItem title='' backgroundImg={ } projectUrl = '/'/>
-                    <ProjectItem title='' backgroundImg={ } projectUrl = '/'/>
-                    <ProjectItem title='' backgroundImg={ } projectUrl = '/'/> */}
 				</div>
 			</div>
 		</div>
