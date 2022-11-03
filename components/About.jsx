@@ -4,7 +4,7 @@ import AboutImg from "../public/assets/about.jpg";
 
 const About = () => {
 	return (
-		<div className="w-full md:h-screen p-2 flex items-center py-16">
+		<div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
 			<div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
 				<div className="col-span-2">
 					<p className="text-xl tracking-widest text-[#5651e5] uppercase">
@@ -12,7 +12,7 @@ const About = () => {
 					</p>
 					<h2 className="py-4">Who I Am</h2>
 					<p className="py-2 text-gray-600">
-						I'm a FrontEnd Developer with experience in building
+						I’m a FrontEnd Developer with experience in building
 						high-performing, responsive, beautiful web applications to deliver a
 						unique, intuitive user experience. I enjoy being challenged and
 						working on projects that require me to step outside of my comfort
