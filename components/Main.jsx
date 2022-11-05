@@ -1,8 +1,22 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Main = () => {
+	const [flag, setFlag] = useState(false);
+
+	useEffect(() => {
+		const handleFlag = () => {
+			if (window.scrollY >= 90) {
+				setFlag(true);
+			} else {
+				setFlag(false);
+			}
+		};
+		window.addEventListener("scroll", handleFlag);
+	}, []);
+
 	return (
 		<div id="main" className="w-full h-screen text-center">
 			<div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
@@ -35,6 +49,15 @@ const Main = () => {
 					</div>
 				</div>
 			</div>
+			{flag ? (
+				<div className="py-12 fixed bottom-2 right-14">
+					<Link href="/">
+						<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+							<HiOutlineChevronDoubleUp size={30} className="text-[#5651e5]" />
+						</div>
+					</Link>
+				</div>
+			) : null}
 		</div>
 	);
 };
