@@ -12,7 +12,7 @@ const ProjectItem = ({ title, desc, backgroundImg, liveUrl, githubLink }) => {
 			/>
 			<div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full">
 				<h3 className="text-2xl text-white tracking-wider text-center">
-					{title} <small>({desc})</small>
+					{title} <small className="text-sm">({desc})</small>
 				</h3>
 				<p className="pb-4 pt-2 text-white text-center">React JS</p>
 				<div className="flex items-center justify-center">
