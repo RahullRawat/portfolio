@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import aipan from "../public/assets/projects/aipan.png";
 import cricket from "../public/assets/projects/cricket.png";
 import quizadda from "../public/assets/projects/quizadda.png";
 import topnote from "../public/assets/projects/topnote.png";
 import ProjectItem from "./ProjectItem";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const data = [
 	{
@@ -44,7 +46,7 @@ const Projects = () => {
 				<p className="text-xl tracking-widest uppercase text-[#5651e5]">
 					Projects
 				</p>
-				<h2 className="py-4">What I’ve Built</h2>
+				<h2 className="py-4 text-gray-600">What I’ve Built</h2>
 				<div className="grid md:grid-cols-2 gap-8">
 					{data.map((item) => (
 						<div key={item.id}>
@@ -56,6 +58,13 @@ const Projects = () => {
 							/>
 						</div>
 					))}
+				</div>
+				<div className="flex justify-center py-12">
+					<Link href="/">
+						<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+							<HiOutlineChevronDoubleUp size={30} className="text-[#5651e5]" />
+						</div>
+					</Link>
 				</div>
 			</div>
 		</div>
