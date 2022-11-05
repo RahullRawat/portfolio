@@ -37,7 +37,7 @@ const Navbar = () => {
 					<Image src={Logo} alt="/" width={100} />
 				</Link>
 				<div>
-					<ul className="hidden md:flex">
+					<ul className="hidden md:flex items-center">
 						<Link href="/">
 							<li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5]">
 								Home
@@ -58,10 +58,11 @@ const Navbar = () => {
 								Projects
 							</li>
 						</Link>
-						<Link href="/#contact">
-							<li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5]">
-								Contact
-							</li>
+						<Link
+							href="https://drive.google.com/file/d/1FE60fpGyDb2qQ-pj1mgu0ooLD9mV7FP6/view?usp=sharing"
+							target="_blank"
+						>
+							<button className="py-2 px-4 ml-4">Download CV</button>
 						</Link>
 					</ul>
 					<div onClick={handleNav} className="md:hidden cursor-pointer">
@@ -116,8 +117,11 @@ const Navbar = () => {
 							<Link href="/#projects">
 								<li className="py-4 text-sm">Projects</li>
 							</Link>
-							<Link href="/#contact">
-								<li className="py-4 text-sm">Contact</li>
+							<Link
+								href="https://drive.google.com/file/d/1FE60fpGyDb2qQ-pj1mgu0ooLD9mV7FP6/view?usp=sharing"
+								target="_blank"
+							>
+								<button className="py-2 px-4">Download CV</button>
 							</Link>
 						</ul>
 						<div className="pt-40">
