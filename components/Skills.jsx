@@ -7,7 +7,7 @@ import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind.png";
 import nextjs from "../public/assets/skills/nextjs.png";
 import github1 from "../public/assets/skills/github1.png";
-import vscode from "../public/assets/skills/html.png";
+import vscode from "../public/assets/skills/vscode.png";
 
 const Skills = () => {
 	return (
