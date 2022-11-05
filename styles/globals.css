@@ -9,6 +9,14 @@ html {
 	font-family: "Raleway", sans-serif;
 }
 
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to right, #5651e5, #709dff);
+}
+
 @layer base {
 	body {
 		@apply bg-[#ecf0f3] text-[#1f2937]  tracking-wide;
