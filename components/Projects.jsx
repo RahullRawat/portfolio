@@ -12,6 +12,7 @@ const data = [
 	{
 		id: 1,
 		title: "Aipan Store",
+		desc: "E-commerce",
 		backgroundImg: aipan,
 		liveUrl: "https://aipan.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/aipan-store-react",
@@ -19,6 +20,7 @@ const data = [
 	{
 		id: 2,
 		title: "Cricket Classics",
+		desc: "Video Library",
 		backgroundImg: cricket,
 		liveUrl: "https://aipan.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/cricket-classics",
@@ -26,6 +28,7 @@ const data = [
 	{
 		id: 3,
 		title: "Quiz Adda",
+		desc: "Quiz App",
 		backgroundImg: quizadda,
 		liveUrl: "https://quiz-adda.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/quiz-adda",
@@ -33,6 +36,7 @@ const data = [
 	{
 		id: 4,
 		title: "TopNote",
+		desc: "Notes App",
 		backgroundImg: topnote,
 		liveUrl: "https://topnote.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/topNote",
@@ -52,6 +56,7 @@ const Projects = () => {
 						<div key={item.id}>
 							<ProjectItem
 								title={item.title}
+								desc={item.desc}
 								backgroundImg={item.backgroundImg}
 								liveUrl={item.liveUrl}
 								githubLink={item.githubLink}
