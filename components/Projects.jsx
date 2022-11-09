@@ -14,6 +14,7 @@ const data = [
 		id: 1,
 		title: "Aipan Store",
 		desc: "E-commerce",
+		tech: "React JS",
 		backgroundImg: aipan,
 		liveUrl: "https://aipan.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/aipan-store-react",
@@ -22,6 +23,7 @@ const data = [
 		id: 2,
 		title: "Cricket Classics",
 		desc: "Video Library",
+		tech: "React JS",
 		backgroundImg: cricket,
 		liveUrl: "https://aipan.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/cricket-classics",
@@ -30,6 +32,7 @@ const data = [
 		id: 3,
 		title: "Quiz Adda",
 		desc: "Quiz App",
+		tech: "React JS",
 		backgroundImg: quizadda,
 		liveUrl: "https://quiz-adda.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/quiz-adda",
@@ -38,6 +41,7 @@ const data = [
 		id: 4,
 		title: "TopNote",
 		desc: "Notes App",
+		tech: "React JS",
 		backgroundImg: topnote,
 		liveUrl: "https://topnote.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/topNote",
@@ -46,6 +50,7 @@ const data = [
 		id: 5,
 		title: "Meta UI",
 		desc: "Component Library",
+		tech: "HTML, CSS, JS",
 		backgroundImg: meta,
 		liveUrl: "https://meta-ui.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/meta-ui",
@@ -66,6 +71,7 @@ const Projects = () => {
 							<ProjectItem
 								title={item.title}
 								desc={item.desc}
+								tech={item.tech}
 								backgroundImg={item.backgroundImg}
 								liveUrl={item.liveUrl}
 								githubLink={item.githubLink}
