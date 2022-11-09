@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import aipan from "../public/assets/projects/aipan.png";
+import meta from "../public/assets/projects/meta.png";
 import cricket from "../public/assets/projects/cricket.png";
 import quizadda from "../public/assets/projects/quizadda.png";
 import topnote from "../public/assets/projects/topnote.png";
@@ -40,6 +41,14 @@ const data = [
 		backgroundImg: topnote,
 		liveUrl: "https://topnote.netlify.app/",
 		githubLink: "https://github.com/RahullRawat/topNote",
+	},
+	{
+		id: 5,
+		title: "Meta UI",
+		desc: "Component Library",
+		backgroundImg: meta,
+		liveUrl: "https://meta-ui.netlify.app/",
+		githubLink: "https://github.com/RahullRawat/meta-ui",
 	},
 ];
 
